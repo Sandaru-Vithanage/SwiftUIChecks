@@ -23,6 +23,10 @@ class ChecksVM: ObservableObject {
         let voucher = Voucher(title: title, notes: notes, amount: amount)
         vouchers.append(voucher)
         isAddVoucherVisible = false
+
+        let balacequotation = Voucher(title:title, showError:show)
+        balance.append(voucher)
+        isbalanceAvailable = false
     }
     
 }
